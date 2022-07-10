@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Ubuntu Regular', sans-serif;
+  font-size: 16px;
+  color: #201b2d;
+}
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  font-family: 'Ubuntu Bold', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.65em;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 65px;
+  padding-bottom: 90px;
+
+  color: white;
+
+  background: rgba(78, 189, 254, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(56, 142, 217, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(78, 189, 254, 1)),
+    color-stop(100%, rgba(56, 142, 217, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(56, 142, 217, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(56, 142, 217, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(56, 142, 217, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(56, 142, 217, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#388ed9', GradientType=1 );
+}
+
+.horizon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer {
+  margin-top: 145px;
+}
+
+.title {
+  font-size: 37px;
+}
+
+.title span {
+  font-size: 59px;
+}
+
+.intro {
+  margin-bottom: 40px;
+  margin-top: 35px;
+  width: 400px;
+
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+.btn {
+  display: block;
+  width: 220px;
+  padding: 20px 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+
+  background: #ffd429;
+
+  transition: all 0.5s ease;
+}
+
+.oruafl {
+  margin-top: 27px;
+}
+
+.btn:hover {
+  background: #d9860e;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.future {
+  padding-top: 105px;
+  padding-bottom: 120px;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+
+  text-align: center;
+}
+
+.time {
+  width: 350px;
+  padding-top: 100px;
+
+  background: url('../img/machine.jpg') no-repeat center top;
+}
+
+.time-title {
+  font-size: 19px;
+}
+
+.time-text {
+  margin-top: 17px;
+}
+
+.time-travel {
+  background: url('../img/beach.jpg') no-repeat center top;
+}
+
+.time-value {
+  background: url('../img/launch.jpg') no-repeat center top;
+}
+
+.mail {
+  padding-top: 105px;
+  padding-bottom: 105px;
+
+  text-align: center;
+
+  background: #ecf3f8;
+}
+
+.form {
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.form-form {
+  margin-top: 55px;
+}
+
+.input {
+  width: 345px;
+  height: 45px;
+  padding-left: 25px;
+
+  font-size: 15px;
+
+  border: #bbbbbb 1px solid;
+  border-radius: 2px;
+}
+
+.btn-form {
+  width: 345px;
+  margin: 0 auto;
+
+  border: 0;
+
+  cursor: pointer;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 65px;
+
+  background: #164d7a;
+}
+
+.credits {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 14px;
+  color: #d4cee3;
+  text-align: center;
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  .horizon {
+    flex-direction: column;
+  }
+
+  .offer {
+    width: 100%;
+  }
+
+  .intro {
+    width: auto;
+  }
+
+  .oruafl {
+    display: block;
+    width: 549px;
+    margin: 72px auto 0;
+  }
+
+  .times {
+    flex-direction: column;
+  }
+
+  .time {
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .oruafl {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .btn-form {
+    width: 100%;
+  }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
